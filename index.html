@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Keycode_Scancode_Tool</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <h1 id="title-text">
+            Keycode and Scancode Tool
+        </h1>
+        <p>
+            Click on any Key to display/copy its SDL Keycode or Scancode.
+        </p>
+        Keyboard Type:
+        <br>
+        <!-- Binary values that specify what parts of the keyboard to render -->
+        <select class="param_selector" id="Keyboard_Select">
+            <option value="0x02">65: ANSI Compact Keyboard</option>
+            <option value="0x07">87: ANSI Ten-Key-Less Keyboard</option>
+            <option value="0x0F" selected="selected">104: ANSI Full Keyboard (Default)</option>
+            <option value="0x17">152: Extended Keyboard</option>
+            <option value="0x27">242: Complete Keyboard</option>
+        </select>
+        <div id="keyboard" class="keyboard"></div>
+        <select class="param_selector" id="Auto_Key_Copy">
+            <option value="0">Disable auto key copying</option>
+            <option value="1" selected="selected">Auto copy SDL_Keycode</option>
+            <option value="2">Auto copy SDL_Scancode</option>
+        </select>
+        <br>
+        <button onclick="copyKeycode()" class="copier">Copy SDL_Keycode</button>
+        <div id="SDL_Keycode_Output" class="output">
+            <span></span>
+        </div>
+        <button onclick="copyScancode()" class="copier">Copy SDL_Scancode</button>
+        <div id="SDL_Scancode_Output" class="output">
+            <span></span>
+        </div>
+
+        <p>Clicking on a key will automatically copy it to your clipboard. To display all 242 keys instead of the
+            default 104-key layout, simply change the Keyboard Type.</p>
+    </main>
+
+
+    <footer>
+        <p>zerico2005 | 2023/10/15</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-image: linear-gradient(#AAAAAA, #008080);
+    font-size: 24px;
+    font-family: "Franklin Gothic", sans-serif;
+    margin: 0;
+    flex-direction: column;
+    padding: 0;
+}
+
+main {
+    margin: 12px;
+    padding: 0;
+    flex: 1;
+}
+
+footer {
+    margin-left: 12px;
+    margin-top: 16px;
+    font-size: 9px;
+}
+
+#title-text {
+    margin-top: 0px;
+}
+
+.keyboard {
+    box-sizing: border-box;
+    position: relative;
+    min-width: 256px;
+    min-height: 96px;
+    margin-right: 16px;
+    background-image: linear-gradient(#808080, #404040);
+    border-style: solid;
+    border-color: #606060;
+    border-radius: 12px;
+    border-width: 2px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.keyboard-key {
+    position: absolute;
+    font-family: Consolas, "Lucidia Console", monospace;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-color: #CCCCCC;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: pre;
+    color: #000000;
+}
+
+button.keyboard-key:hover {
+    background-color: #CCCCCC;
+    border-color: #FFFFFF;
+}
+
+button.keyboard-key:active {
+    background-color: #999999;
+    border-color: #FFFFFF;
+}
+
+#enter {
+    border-style: solid;
+    border-color: #000000;
+    border-width: 2px;
+    font-size: 18px;
+    width: 96px;
+    background-color: #ffffff;
+    font-family: Consolas, "Lucidia Console", monospace;
+}
+
+#about {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+.param_selector {
+    font-size: 16px;
+    min-width: 288px;
+    width: 60vw;
+    max-width: 400px;
+    padding: 4px;
+    color: #000000;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 2px;
+}
+
+.output {
+    min-width: 320px;
+    width: 60vw;
+    max-width: 600px;
+
+    margin-top: 4px;
+    padding: 4px;
+    font-family: Consolas, "Lucidia Console", monospace;
+    font-size: 18px;
+    color: #000000;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 2px;
+}
+
+.copier {
+    font-size: 16px;
+    padding: 4px;
+    margin-top: 4px;
+    font-family: monospace;
+    color: #000000;
+    background-color: #F08000;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 2px;
+}
+
+button.copier:hover {
+    background-color: #E07000;
+}
+
+button.copier:active {
+    background-color: #A05000;
+}
+
+.generator {
+    color: #000000;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 2px;
+    font-size: 18px;
+    width: 288px;
+    background-color: #ffffff;
+    font-family: monospace;
+}
+
+button.generator:hover {
+    background-color: #dddddd;
+}
+
+button.generator:active {
+    background-color: #bbbbbb;
+}
