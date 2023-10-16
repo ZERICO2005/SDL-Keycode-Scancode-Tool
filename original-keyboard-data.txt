@@ -1,5 +1,5 @@
 /*	
-**	This C struct converted into a Parallel JavaScript Array
+**	This C struct was converted into a Parallel JavaScript Array
 **	using Struct-Splitter https://github.com/ZERICO2005/Struct-Splitter
 */
 
